@@ -496,7 +496,7 @@ function initMainCode() {
     new ScrollMagic.Scene({
         triggerElement: '.ss3-info-graph-1',
         triggerHook: 0,
-        duration: '400%'
+        duration: isMobile ? '100%' : '400%'
     })
     .setPin('.ss3-info-graph-1')
     .setTween(ss3Graph1Timeline)

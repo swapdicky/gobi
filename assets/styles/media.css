@@ -25,6 +25,7 @@
   .section-title{margin-bottom: 40px;}
   .margin-160-bottom {  margin-bottom: 60px !important;}
   .section-landing{min-height: 840px;}
+  .section-landing{padding-top: 80px;}
 
   /* landing */
   #section-landing{padding-top: 110px;min-height: 1160px;}
@@ -53,11 +54,11 @@
 
 #section-landing .section-title-border{top:-20px}
   /* ss1 */
-  .ss3-graph1-img{width: 1020px;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+  .ss3-graph1-img{width: 420px;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
   .ss3-graph2-img{width: 240vw;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
   .ss3-graph1-overlay{opacity: 1;}
   .ss2-info-graph-1 {position: relative;height: 100vh;;padding-top: 0;}
-  .ss2-info-graph-1 .context {position: absolute;top:30%;transform: translateY(-50%);}
+  .ss2-info-graph-1 .context {position: absolute;top:35%;transform: translateY(-50%);}
   .ss2-info-graph-1 .context {padding-top: 0;}
   .ss2-info-graph-1 .inner-graph-wild{width: 160vw!important;margin-left: -50vw;}
   .ss2-zoom{position: absolute;right: 60px;    top: 0;width: 25vw;z-index: 9;}
