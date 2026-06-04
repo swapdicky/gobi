@@ -425,10 +425,10 @@ function initMainCode() {
     var ss3Graph1Timeline = gsap.timeline();
     
     if (isMobile) {
-        // Mobile: skip overlays and scale, just pan the image
+        // Mobile: skip overlays and scale, just pan the image from center to right
         ss3Graph1Timeline.fromTo('.ss3-graph1-img',
             { x: 0 },
-            { x: '-120vw', ease: Linear.easeNone }
+            { x: '-50vw', ease: Linear.easeNone }
         );
     } else {
         // Step 1: Show overlay 2 and 3 together
@@ -817,8 +817,8 @@ function initMainCode() {
     
     // Animate ss4-cc-train moving down with scroll
     var ccTrainTimeline = gsap.timeline();
-    var ccTrainDuration = isMobile ? 12000 : 12000;
-    var ccTrainY = isMobile ? 24000 : 12000;
+    var ccTrainDuration = isMobile ? 6000 : 12000;
+    var ccTrainY = isMobile ? 10000 : 12000;
     var ccTrainOffset = isMobile ? 400 : 800;
     
     ccTrainTimeline.to('.ss4-cc-train', {

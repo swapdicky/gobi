@@ -44,7 +44,7 @@
   
 }
   /* ss1 */
-  .ss3-graph1-img{width: 150vw;left: 0%;transform: translate(0%,-50%);top:50%}
+  .ss3-graph1-img{width: 200vw;left: 50%;transform: translate(-50%,-50%);top:50%}
   .ss3-graph2-img{width: 240vw;left: 50%;transform: translate(-50%,-50%);top:50%}
   .ss3-graph1-overlay{opacity: 1;}
   .ss2-info-graph-1 {position: relative;height: 100vh;;padding-top: 0;}
