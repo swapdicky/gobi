@@ -321,7 +321,7 @@ function initMainCode() {
     
     var ss3Bg1Timeline = gsap.timeline();
     ss3Bg1Timeline.to('.ss3-bg-1', {
-        y: 300,
+        y: isMobile ? 100 : 300,
         ease: Linear.easeNone
     });
     
@@ -335,7 +335,7 @@ function initMainCode() {
     
     var ss3Bg2Timeline = gsap.timeline();
     ss3Bg2Timeline.to('.ss3-bg-2', {
-        y: -300,
+        y: isMobile ? -100 : -300,
         ease: Linear.easeNone
     });
     
@@ -554,7 +554,7 @@ function initMainCode() {
     // Parallax effect for section 4 backgrounds
     var ss4Bg1Timeline = gsap.timeline();
     ss4Bg1Timeline.to('.ss4-bg-1', {
-        y: 300,
+        y: isMobile ? 100 : 300,
         ease: Linear.easeNone
     });
     
@@ -568,7 +568,7 @@ function initMainCode() {
     
     var ss4Bg2Timeline = gsap.timeline();
     ss4Bg2Timeline.to('.ss4-bg-2', {
-        y: -300,
+        y: isMobile ? -100 : -300,
         ease: Linear.easeNone,
         duration: 1
     });
@@ -603,7 +603,7 @@ function initMainCode() {
     // Parallax effect for section 5 backgrounds
     var ss5Bg1Timeline = gsap.timeline();
     ss5Bg1Timeline.to('.ss5-bg-1', {
-        y: 300,
+        y: isMobile ? 100 : 300,
         ease: Linear.easeNone
     });
     
@@ -617,7 +617,7 @@ function initMainCode() {
     
     var ss5Bg2Timeline = gsap.timeline();
     ss5Bg2Timeline.to('.ss5-bg-2', {
-        y: -300,
+        y: isMobile ? -100 : -300,
         ease: Linear.easeNone
     });
     

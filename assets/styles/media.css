@@ -25,7 +25,6 @@
   .section-title{margin-bottom: 40px;}
   .margin-160-bottom {  margin-bottom: 60px !important;}
   .section-landing{min-height: 840px;}
-  .section-landing{padding-top: 80px;}
 
   /* landing */
   #section-landing{padding-top: 110px;min-height: 1160px;}
@@ -64,7 +63,7 @@
   .ss2-zoom{position: absolute;right: 60px;    top: 0;width: 25vw;z-index: 9;}
   .ss2-scroll-hints.active{opacity: 0;}
   
-
+  .ss2-info-ball{width: 28px;height: 28px;}
 
   /* ss3 info graph - show end state + pan on mobile */
   .ss3-info-graph-wrap{width: 300vw;margin-left: calc(50% - 50vw);}
@@ -75,7 +74,9 @@
   .half-left-block,.half-right-block{width: 100%;aspect-ratio: 1500/840}
   .ss3-info-graph-1{height: 100vh;}
   
-  .ss4-info-graph-1{transform: scale(0.5)}
+  /* ss4 */
+  .ss4-info-graph-1{transform: scale(0.4)}
+  .ss4-train-wrap h5 {  left: calc(50% - 240px);  bottom: -160px;  transform: scale(2);}
 
   /* ss5 */
   #section-5 .section-landing{min-height: 840px;}
