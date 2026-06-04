@@ -54,7 +54,7 @@
 
 #section-landing .section-title-border{top:-20px}
   /* ss1 */
-  .ss3-graph1-img{width: 620px;position: absolute;left: 80%;top: 50%;transform: translate(-50%,-50%);}
+  .ss3-graph1-img{width: 620px;position: absolute;left: 80%;top: 30%;transform: translate(-50%,-50%);}
   .ss3-graph2-img{width: 240vw;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
   .ss3-graph1-overlay{opacity: 1;}
   .ss2-info-graph-1 {position: relative;height: 100vh;;padding-top: 0;}
