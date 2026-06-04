@@ -88,7 +88,7 @@
   .ss4-cc-train{top:1000px }
   .ss4-cc-train img{width: 42px;left: calc(50% - 16px);}
   .ss4-info-graph-2{transform: translateX(-50%) scale(0.48);transform-origin: top center;margin-top: 0px;height: 1280px;margin-top: -800px;}
-  .ss4-chart{width: 728px;left: 50%;transform: translateX(-50%) scale(0.6);transform-origin: top center;margin-bottom: -156px;}
+  .ss4-chart{width: 728px;left: 50%;transform: translateX(-50%) scale(0.5);transform-origin: top center;margin-bottom: -190px;}
   .ss4-chart-title{white-space: normal;}
   .ss4-info-txt-1,.ss4-info-txt-2{transform: scale(1.8);transform-origin: bottom left;}
   .ss4-info-txt-1{left: calc(50% - 100vw);width: 50vw;bottom: -940px;}
