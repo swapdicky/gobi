@@ -82,8 +82,8 @@
   .ss4-info-graph-3{height: 800px;background-size: 20px auto;}
   .ss4-bg-break-1{height: 810px ;width: 100%;  bottom: 600px;  left: 0;background-size: 100% 100%;}
 
-.section-transition-4-5{bottom:-150px;}
-.section-transition-4-5b{bottom:-120px;}
+.section-transition-4-5{bottom:-150px;width: 100%;position: absolute;z-index: 9;pointer-events: none;}
+.section-transition-4-5b{bottom:-120px;width: 100%;position: absolute;z-index: 9;pointer-events: none;background: url(../images/gobi-webp/bg-c2-3b.webp) center center no-repeat;background-size: 100% auto;height: 600px;mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);}
   .ss2-info-graph-1 .ss5-map-object img{width: 150px;margin-left: 35px !important;margin-bottom: 10px;}
 
 
