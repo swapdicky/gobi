@@ -428,7 +428,7 @@ function initMainCode() {
         // Mobile: skip overlays and scale, just pan the image from center to right
         ss3Graph1Timeline.fromTo('.ss3-graph1-img',
             { x: 0 },
-            { x: '-400px', ease: Linear.easeNone }
+            { x: '-100px', ease: Linear.easeNone }
         );
     } else {
         // Step 1: Show overlay 2 and 3 together
