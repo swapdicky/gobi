@@ -66,6 +66,13 @@
   
   .ss4-info-graph-1{transform: scale(0.5)}
 
+  /* ss5 */
+  #section-5 .section-landing{min-height: 840px;}
+  .ss5-bg-1{position: absolute;width: 100%;top:0;left: 0;overflow: hidden;}
+  .ss5-bg-1 img{width: 100%;position: relative;left: 50%;transform: translateX(-50%);}
+  .ss5-bg-2{position: absolute;width: 100%;top:400px;left: 0;overflow: hidden;z-index: 100;}
+  .ss5-bg-2 img{width: 100%;position: relative;left: 50%;transform: translateX(-50%);}
+  .ss5-rail{height: 800px;z-index: 1;}
 
   /* ss4 */
   .ss4-cc-train{top:1000px }
