@@ -1316,7 +1316,7 @@ $(document).ready(function() {
         responsive: {
             0: {
                 items: 1.5,
-                margin: 50
+                margin: 10
             },
             768: {
                 items: 3,
