@@ -426,7 +426,7 @@ function initMainCode() {
     
     if (isMobile) {
         // Mobile: skip overlays and scale, just pan the image from center to right
-        ss3Graph1Timeline.fromTo('.ss3-graph1-img',
+        ss3Graph1Timeline.fromTo('.ss3-graph1-img-wrap',
             { x: 0 },
             { x: '-300px', ease: Linear.easeNone }
         );
@@ -445,7 +445,7 @@ function initMainCode() {
         }, '<');
         
         // Step 3: Pan and zoom
-        ss3Graph1Timeline.to('.ss3-graph1-img', {
+        ss3Graph1Timeline.to('.ss3-graph1-img-wrap', {
             x: '-7%',
             y: '-5%',
             scale: 1.15,
@@ -483,7 +483,7 @@ function initMainCode() {
         });
         
         // Step 7: Restore to original size and position
-        ss3Graph1Timeline.to('.ss3-graph1-img', {
+        ss3Graph1Timeline.to('.ss3-graph1-img-wrap', {
             x: 0,
             y: 0,
             scale: 1,
