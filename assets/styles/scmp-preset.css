@@ -96,21 +96,21 @@ button,a{cursor: pointer;}
 
 
 /* Scroll button */
-.scroll-btn{margin: 15px auto;width: 30px;text-align: center;}
+.scroll-btn{margin: 15px auto;width: 21px;text-align: center;}
 .ms-ico-scroll{display: inline-block;position: relative;}
 .ms-ico-scroll .ms-ico-scroll-inner{display: inline-block;position: relative;}
-.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse{width: 24px;height: 50px;border: 2px solid #000;border-radius: 15px;display: inline-block;position: relative;}
+.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse{width: 17px;height: 35px;border: 2px solid #000;border-radius: 11px;display: inline-block;position: relative;}
 .ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer{width: 100%;height: 100%;position: relative;display: inline-block;}
-.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner{width: 100%;height: 100%;position: relative;display: flex;align-items: center;justify-content: center;flex-direction: column;text-align: center;border-radius: 12px;top:-7px}
-.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner>div{width: 2px;height: 3px;background-color: #000;display: block;margin: 0 auto;}
+.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner{width: 100%;height: 100%;position: relative;display: flex;align-items: center;justify-content: center;flex-direction: column;text-align: center;border-radius: 8px;top:-12px}
+.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner>div{width: 2px;height: 2px;background-color: #000;display: block;margin: 0 auto;}
 .ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner>div:nth-child(1),
 .ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner>div:nth-child(2){-webkit-animation: mousescrolldot 2s ease-in-out infinite;animation: mousescrolldot 2s ease-in-out infinite;}
 .ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner>div:nth-child(4),
 .ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner>div:nth-child(5){-webkit-animation: mousescrolldot 2s ease-in-out infinite;animation: mousescrolldot 2s ease-in-out infinite;-webkit-animation-delay: 1s;animation-delay: 1s;}
-.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner>div+div{margin-top: 2px;}
-.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner .line-long{height: 14px;}
+.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner>div+div{margin-top: 1.5px;}
+.ms-ico-scroll .ms-ico-scroll-inner .ms-scroll-mouse .ms-scroll-mouse-outer .ms-scroll-mouse-inner .line-long{height: 10px;}
 .ms-ico-scroll .ms-ico-scroll-inner .scroll-text{text-align: center;}
-.ms-ico-scroll .ms-ico-scroll-inner .scroll-text span{font-family: Roboto, sans-serif;font-size: 10px;text-transform: uppercase;color: #000;}
+.ms-ico-scroll .ms-ico-scroll-inner .scroll-text span{font-family: Roboto, sans-serif;font-size: 7px;text-transform: uppercase;color: #000;}
 
 @-webkit-keyframes mousescrolldot{
   from{height: 3px;}

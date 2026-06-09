@@ -219,64 +219,6 @@ function initMainCode() {
         }
     });
     
-    // Step 3: Ball 3 follows third path
-    ss2BallTimeline.to('.ss2-info-ball-3', {
-        left: '51.97%',
-        top: '69.89%',
-        duration: 0.25,
-        ease: Linear.easeNone,
-        onStart: function() {
-            document.querySelector('.ss2-info-topc').style.display = 'block';
-        },
-        onUpdate: function() {
-            var ball = document.querySelector('.ss2-info-ball-3');
-            var ballLeft = parseFloat(ball.style.left);
-            document.querySelector('.ss2-info-topc').style.clipPath = 'polygon(' + ballLeft + '% 0, 100% 0, 100% 100%, ' + ballLeft + '% 100%)';
-        },
-        onReverseComplete: function() {
-            document.querySelector('.ss2-info-topc').style.display = 'none';
-        }
-    });
-    
-    ss2BallTimeline.to('.ss2-info-ball-3', {
-        left: '49.04%',
-        top: '71.97%',
-        duration: 0.25,
-        ease: Linear.easeNone,
-        onUpdate: function() {
-            var ball = document.querySelector('.ss2-info-ball-3');
-            var ballLeft = parseFloat(ball.style.left);
-            document.querySelector('.ss2-info-topc').style.clipPath = 'polygon(' + ballLeft + '% 0, 100% 0, 100% 100%, ' + ballLeft + '% 100%)';
-        }
-    });
-    
-    ss2BallTimeline.to('.ss2-info-ball-3', {
-        left: '45.04%',
-        top: '72.40%',
-        duration: 0.25,
-        ease: Linear.easeNone,
-        onUpdate: function() {
-            var ball = document.querySelector('.ss2-info-ball-3');
-            var ballLeft = parseFloat(ball.style.left);
-            document.querySelector('.ss2-info-topc').style.clipPath = 'polygon(' + ballLeft + '% 0, 100% 0, 100% 100%, ' + ballLeft + '% 100%)';
-        }
-    });
-    
-    ss2BallTimeline.to('.ss2-info-ball-3', {
-        left: '43.95%',
-        top: '74.30%',
-        duration: 0.25,
-        ease: Linear.easeNone,
-        onUpdate: function() {
-            var ball = document.querySelector('.ss2-info-ball-3');
-            var ballLeft = parseFloat(ball.style.left);
-            document.querySelector('.ss2-info-topc').style.clipPath = 'polygon(' + ballLeft + '% 0, 100% 0, 100% 100%, ' + ballLeft + '% 100%)';
-        },
-        onComplete: function() {
-            document.querySelector('.ss2-info-topc').classList.add('on');
-        }
-    });
-    
     new ScrollMagic.Scene({
         triggerElement: '.ss2-info-graph-1',
         triggerHook: 0,
@@ -296,7 +238,7 @@ function initMainCode() {
     document.querySelectorAll('.zoom-out-center').forEach(function(element, index) {
         var zoomOutTimeline = gsap.timeline();
         zoomOutTimeline.to(element.querySelector('.pair-right'), {
-            scale: 1.5,
+            scale: 1.15,
             ease: Linear.easeNone
         });
         
@@ -335,7 +277,7 @@ function initMainCode() {
     
     var ss3Bg2Timeline = gsap.timeline();
     ss3Bg2Timeline.to('.ss3-bg-2', {
-        y: isMobile ? -100 : -300,
+        y: isMobile ?  0 : -300,
         ease: Linear.easeNone
     });
     
@@ -536,7 +478,7 @@ function initMainCode() {
     new ScrollMagic.Scene({
         triggerElement: '.ss3-info-graph-2',
         triggerHook: 0,
-        duration: '250%'
+        duration: '150%'
     })
     .setPin('.ss3-info-graph-2')
     .setTween(ss3Graph2Timeline)
@@ -568,12 +510,12 @@ function initMainCode() {
     
     var ss4Bg2Timeline = gsap.timeline();
     ss4Bg2Timeline.to('.ss4-bg-2', {
-        y: isMobile ? -100 : -300,
+        y: isMobile ? 0 : -200,
         ease: Linear.easeNone,
         duration: 1
     });
     ss4Bg2Timeline.to('.ss4-bg-2', {
-        scale: 2,
+        scale: isMobile ? 1 : 1.5,
         ease: Linear.easeNone,
         duration: 0.8
     }, '<0.2');
@@ -617,7 +559,7 @@ function initMainCode() {
     
     var ss5Bg2Timeline = gsap.timeline();
     ss5Bg2Timeline.to('.ss5-bg-2', {
-        y: isMobile ? -100 : -300,
+        y: isMobile ?  0 : -300,
         ease: Linear.easeNone
     });
     
@@ -669,7 +611,7 @@ function initMainCode() {
                 autoRotate: -90,
                 end: 0.9
             },
-            duration: 2200,
+            duration: isMobile ? 1100 : 2200,
             ease: Linear.easeOut
         })
 
@@ -677,7 +619,7 @@ function initMainCode() {
     new ScrollMagic.Scene({
         triggerElement: '.ss4-info-graph-2',
         triggerHook: .4,
-        duration: 2400
+        duration: isMobile ? 1200 : 2400
     })
     .setTween(carRotationTimeline)
     .addTo(controller);
@@ -692,7 +634,7 @@ function initMainCode() {
                 autoRotate: -90,
                 end: .9
             },
-            duration: 2200,
+            duration: isMobile ? 1100 : 2200,
             ease: Linear.easeOut
         })
 
@@ -700,7 +642,7 @@ function initMainCode() {
     new ScrollMagic.Scene({
         triggerElement: '.ss4-info-graph-2',
         triggerHook: 1,
-        duration: 1600
+        duration: isMobile ? 800 : 1600
     })
     .setTween(car1bRotationTimeline)
     .addTo(controller);
@@ -715,7 +657,7 @@ function initMainCode() {
                 autoRotate: -90,
                 end: 0.9
             },
-            duration: 2800,
+            duration: isMobile ? 1400 : 2800,
             ease: Linear.easeOut
         })
 
@@ -723,8 +665,8 @@ function initMainCode() {
     new ScrollMagic.Scene({
         triggerElement: '.ss4-info-graph-2',
         triggerHook: 1,
-        duration: 2200,
-        offset:400
+        duration: isMobile ? 1100 : 2200,
+        offset: isMobile ? 200 : 400
     })
     .setTween(car2RotationTimeline)
     .addTo(controller);
@@ -738,7 +680,7 @@ function initMainCode() {
                 align: "self",
                 autoRotate: -90
             },
-            duration: 0.9,
+            duration: isMobile ? 0.45 : 0.9,
             ease: Linear.easeNone
         })
 
@@ -746,7 +688,7 @@ function initMainCode() {
     new ScrollMagic.Scene({
         triggerElement: '.ss4-info-graph-2',
         triggerHook: 0.2,
-        duration: 2000
+        duration: isMobile ? 1000 : 2000
     })
     .setTween(car3RotationTimeline)
     .addTo(controller);
@@ -761,13 +703,14 @@ function initMainCode() {
                 autoRotate: -90,
                 end: 0.7
             },
+            duration: isMobile ? 0.35 : 0.7,
             ease: Linear.easeNone
         })
     
     new ScrollMagic.Scene({
         triggerElement: '.ss4-info-graph-2',
         triggerHook: 0.3,
-        duration: 2800
+        duration: isMobile ? 1400 : 2800
     })
     .setTween(car4RotationTimeline)
     .addTo(controller);
@@ -782,13 +725,14 @@ function initMainCode() {
                 autoRotate: -90,
                 end: .7
             },
+            duration: isMobile ? 0.35 : 0.7,
             ease: Linear.easeNone
         })
     
     new ScrollMagic.Scene({
         triggerElement: '.ss4-info-graph-2',
         triggerHook: 0.5,
-        duration: 1800
+        duration: isMobile ? 900 : 1800
     })
     .setTween(car4bRotationTimeline)
     .addTo(controller);
@@ -803,14 +747,14 @@ function initMainCode() {
                 autoRotate: -90,
                 end: 0.7
             },
-            duration: 0.9,
+            duration: isMobile ? 0.45 : 0.9,
             ease: Linear.easeNone
         })
     
     new ScrollMagic.Scene({
         triggerElement: '.ss4-info-graph-2',
         triggerHook: 0.2,
-        duration: 1800
+        duration: isMobile ? 900 : 1800
     })
     .setTween(car5RotationTimeline)
     .addTo(controller);
@@ -913,47 +857,47 @@ function initMainCode() {
     // ss4-chart animation in sequence
     var ss4ChartTimeline = gsap.timeline({ paused: true });
     
-    // Step 1: ss4-bar1 grows (0s - 0.3s)
+    // Step 1: ss4-bar1 grows
     ss4ChartTimeline.to('.ss4-bar1', {
         height: 105,
-        duration: 0.3,
+        duration: 0.4,
         ease: Power2.easeOut
     }, 0);
     
-    // Step 2: ss4-dottedline1 extends (0.35s - 1.15s, slower)
+    // Step 2: ss4-dottedline1 extends (overlap >50% with bar1)
     ss4ChartTimeline.to('.ss4-dottedline1', {
         width: 500,
-        duration: 0.8,
+        duration:1,
         ease: Power2.easeOut
-    }, 0.35);
+    }, 0.15);
     
-    // Step 3: ss4-chart-truck slides in (1.2s - 2.0s, slower)
+    // Step 3: ss4-chart-truck slides in (overlap >50% with dottedline1)
     ss4ChartTimeline.to('.ss4-chart-truck', {
         x: 0,
-        duration: 0.8,
+        duration: 1,
         ease: Power2.easeOut
-    }, 1.2);
+    }, 0.5);
     
-    // Step 4: ss4-bar2 grows (2.05s - 2.35s)
+    // Step 4: ss4-bar2 grows (overlap >50% with truck)
     ss4ChartTimeline.to('.ss4-bar2', {
         height: 245,
-        duration: 0.3,
+        duration: 1,
         ease: Power2.easeOut
-    }, 2.05);
+    }, 0.8);
     
-    // Step 5: ss4-dottedline2 extends (2.4s - 3.2s, slower)
+    // Step 5: ss4-dottedline2 extends (overlap >50% with bar2)
     ss4ChartTimeline.to('.ss4-dottedline2', {
         width: 500,
-        duration: 0.8,
+        duration: 1,
         ease: Power2.easeOut
-    }, 2.4);
+    }, 0.75);
     
-    // Step 6: ss4-chart-train slides in (3.25s - 4.05s, slower)
+    // Step 6: ss4-chart-train slides in (overlap >50% with dottedline2)
     ss4ChartTimeline.to('.ss4-chart-train', {
         x: 0,
-        duration: 0.8,
+        duration: 1,
         ease: Power2.easeOut
-    }, 3.25);
+    }, 1.1);
     
     new ScrollMagic.Scene({
         triggerElement: '.ss4-chart',
@@ -1049,18 +993,18 @@ function initMainCode() {
     
     // Mobile: Translate ss5-info-graph-1-inner to right edge during pin
     if (isMobile) {
-        ss5Timeline.to('.ss5-info-graph-1-inner', {
-            x: '-50%',
+        // Train follows the pan on mobile
+        ss5Timeline.to('.ss5-block-train', {
+            x: '-15%',
             duration: 1,
             ease: Linear.easeNone
         }, 0);
         
-        // Train follows the pan on mobile
-        ss5Timeline.to('.ss5-block-train', {
-            x: '-50%',
+        ss5Timeline.to('.ss5-info-graph-1-inner', {
+            x: '-100%',
             duration: 1,
             ease: Linear.easeNone
-        }, 0);
+        }, .5);
     }
     
     // Step 1: Scale ss5-block-1 from 2 to 1
@@ -1239,10 +1183,10 @@ function initMainCode() {
         timeline
             .fromTo(outerDiv.querySelector('.pair-left'), 
                 { scale: 1 },
-                { scale: 1.1, duration: 1 }
+                { scale: 1, duration: 1 }
             )
             .fromTo(outerDiv.querySelector('.pair-right'), 
-                { scale: 1.1 },
+                { scale: 1},
                 { scale: 1, duration: 1 },
                 "<"
             );

@@ -75,17 +75,16 @@ main{background: #EEE;}
 
 
 /* section 2 */
-#section-2{background: url(../images/gobi-webp/ss1-bg.webp) top center repeat;background-size: 100% auto;position: relative;padding-bottom: 120px;}
+#section-2{background: url(../images/gobi-webp/ss1-bg.webp) top center repeat;background-size: 100% auto;position: relative;padding-bottom: 300px;}
 .ss2-bg-1{position: absolute;width: 100%;height: 420px;  top: -240px;left: 0;background: url(../images/gobi-webp/landing-bg3.webp) center center repeat-x;background-size: 1280px 100%;min-width: 1280px;left: 50%;transform: translateX(-50%);}
 .inner-qoute-1::after{position: absolute;content: '　';width: 160px;height: 160px;background: #FFF url(../images/gobi-webp/img-profile-photo1.webp) center center no-repeat;background-size: 160px ;bottom:-25px;right:95px;}
 
 .ss2-info-graph-1{width: 100%;margin-bottom: 80px;display: flex;align-items: center;justify-content: center;position: relative;padding-top: 120px;}
 
-.ss2-info-ball{position: absolute;width: 34px;height: 34px;background:  #FFF url(../images/gobi-webp/ss2-path-icon.webp) center center no-repeat;background-size: 16px;border-radius: 100%;transform: translate(-50%, -50%) translateZ(0);z-index: 3;will-change: transform, left, top;}
+.ss2-info-ball{position: absolute;width: 34px;height: 34px;background:  #FFF url(../images/gobi-webp/ss2-path-icon.webp) center center no-repeat;background-size: 16px;border-radius: 100%;transform: translate(-50%, -50%) translateZ(0);z-index: 3;}
 .ss2-info-ball-1{left: 55.72%;top: 69.89%;}
 .ss2-info-ball-2{left: 55.72%;top: 69.89%;}
-.ss2-info-ball-3{left: 55.72%;top: 69.89%;}
-.ss2-info-top{position: absolute;top:0;left: 0;z-index: 2;will-change: clip-path;transform: translateZ(0);}
+.ss2-info-top{position: absolute;top:0;left: 0;z-index: 2;transform: translateZ(0);}
 .ss2-info-topa{
     clip-path: polygon(0 0, 55.72% 0, 55.72% 100%, 0 100%);
     display: none;
@@ -140,7 +139,7 @@ main{background: #EEE;}
 
 
 /* section 3 */
-#section-3{background: url(../images/gobi-webp/ss1-bg.webp) top center repeat;background-size:  100% auto;padding-bottom: 120px;}
+#section-3{background: url(../images/gobi-webp/ss1-bg.webp) top center repeat;background-size:  100% auto;padding-bottom: 300px;}
 #section-3 .section-landing{overflow: hidden;}
 
 .ss3-bg-1{position: absolute;width: 100%;top:-200px;left: 0;overflow: hidden;}
@@ -150,10 +149,10 @@ main{background: #EEE;}
 
 .ss3-info-graph-0{width: 100%;height: 100vh;display: flex;align-items: center;justify-content: center;position: relative;}
 .ss3-bg-overlay{position: absolute;width: 100%;height: 120vh;top: -10vh;left: 0;background: url(../images/gobi-webp/sandbg.webp) center center no-repeat;background-size: cover;z-index: 0;mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);}
-.ss3-info-graph-1{width: 100%;height: 100vh;position: relative;will-change: transform;contain: layout style;}
-.ss3-graph1-img-wrap{width: 100%;height: 100%;position: absolute;left: 46%;top: 50%;transform: translate(-50%,-50%) translateZ(0);transform-origin: right bottom;will-change: transform;backface-visibility: hidden;}
-.ss3-graph1-img{width:1440px;position: absolute;left: 0;top: 0;will-change: opacity;backface-visibility: hidden;image-rendering: -webkit-optimize-contrast;}
-.ss3-graph1-overlay{opacity: 0;will-change: opacity;}
+.ss3-info-graph-1{width: 100%;height: 100vh;position: relative;contain: layout style;}
+.ss3-graph1-img-wrap{width: 100%;height: 100%;position: absolute;left: 46%;top: 50%;transform: translate(-50%,-50%) translateZ(0);transform-origin: right bottom;backface-visibility: hidden;}
+.ss3-graph1-img{width:1440px;position: absolute;left: 0;top: 0;backface-visibility: hidden;image-rendering: -webkit-optimize-contrast;}
+.ss3-graph1-overlay{opacity: 0;}
 
 .ss3-info-graph-2{width: 100%;height: 100vh;position: relative;}
 .ss3-graph2-img{width: 1680px;position: absolute;left: 50%;top:45%;transform: translate(-50%,-50%);}
@@ -376,7 +375,7 @@ main{background: #EEE;}
 
 .ss3-ball-wrap-3 .ss3-timer{background: url(../images/gobi-webp/ss3-timer3.webp) top center no-repeat;background-size: contain;}
 
-.section-transition-3-4{width: 100%;height: 240px;background: url(../images/gobi-webp/bg-c1-2.webp) center center no-repeat;background-size: cover;position: absolute;z-index: 9;mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);}
+.section-transition-3-4{width: 100%;height: 600px;background: url(../images/gobi-webp/bg-c1-2.webp) bottom  center no-repeat;background-size:100% auto ;position: absolute;z-index: 9;mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);bottom:-180px}
 
 /* section 4 */
 #section-4{background: url(../images/gobi-webp/ss4-bg3.jpg) top center repeat;background-size:  100% auto;}
@@ -388,7 +387,7 @@ main{background: #EEE;}
 .ss4-bg-1 img{min-width: 1280px;width: 101%;position: relative;left: 50%;transform: translateX(-50%);}
 .ss4-bg-2{position: absolute;width: 100%;top:420px;left: 0;overflow: hidden;z-index: 8;will-change: transform;transform-origin: center center;}
 .ss4-bg-2 img{min-width: 1480px;width: 100%;position: relative;left: 50%;transform: translateX(-50%);}
-.ss4-bg-2-overlay{position: absolute;width: 100%;height: 100%;top: 0;left: 0;background: url(../images/gobi-webp/ss4-bg1.webp) center top repeat-x;background-size: auto 2600px;z-index: 9;opacity: 0;will-change: opacity;}
+.ss4-bg-2-overlay{position: absolute;width: 100%;height: 100%;top: 0;left: 0;background: url(../images/gobi-webp/ss4-bg1.webp) center top repeat-x;background-size: auto 2600px;z-index: 9;opacity: 0;}
 
 .ss4-info-graph-3{width: 100%;height: 2180px;display: flex;align-items: flex-end;justify-content: center; background: url(../images/gobi-webp/ss4-rail.webp) center center repeat-y;background-size: 47px auto;}
 .ss4-rail-img{height: 1580px;margin: 0 auto;}
@@ -399,7 +398,7 @@ main{background: #EEE;}
 .ss4-info-graph-1 {position: relative;z-index: 4;height: 100vh;}
 
 .ss4-info-txt-1{position: absolute;width: 300px;left: 25%;bottom: 540px;z-index: 99;}
-.ss4-info-txt-2{position: absolute;width: 300px;right: 15%;bottom: 320px;z-index: 99;}
+.ss4-info-txt-2{position: absolute;width: 300px;right: 25%;bottom: 320px;z-index: 99;}
 
 .ss4-train-carousel{
   position: absolute;
@@ -410,6 +409,7 @@ main{background: #EEE;}
   transform: translate(-50%, -50%);
   overflow: visible;
   animation: trainCarousel 4s linear infinite;
+  pointer-events: none;
 }
 
 @keyframes trainCarousel {
@@ -502,7 +502,7 @@ main{background: #EEE;}
 
 #section-5 .context{position: relative;z-index: 10;}
 .cloude-bg::before{content:"　";background: url(../images/gobi-webp/ss5-bg2.webp) top center repeat;background-size:  100%;position: absolute;width: 100%;height: 1000px;top:-520px;z-index: 0;pointer-events: none;;}
-.cloude-bg{background: #91c5ff  url(../images/gobi-webp/ss5-bg3.webp) bottom center repeat;background-size:  100% ;;padding-bottom: 800px;position: relative;pointer-events: none;}
+.cloude-bg{background: #91c5ff  url(../images/gobi-webp/ss5-bg3.webp) bottom center repeat;background-size:  100% ;;padding-bottom: 800px;position: relative;}
 
 
 #section-5{background: url(../images/gobi-webp/ss1-bg.webp) top center repeat;background-size:  100% auto;}
@@ -527,7 +527,7 @@ main{background: #EEE;}
 .ss5-track{position: absolute;width: 100%;left: 0;bottom: calc(8vh - 2px);z-index: 13;height: 3px;background: #00b1f3;}
 .ss5-track-img{position: absolute;width: 100%;left: 0;bottom: calc(8vh - 4px);z-index: 13;height: 3px;background: url(../images/gobi-webp/ss5-track.webp) center center no-repeat;background-size: contain;}
 .ss5-track-img-top{width: 100%;height: 110vh;position: absolute;left: 0;top: 0px;z-index: -1;background: url(../images/gobi-webp/sandbg.webp) center center no-repeat;background-size: 100%;mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);overflow: hidden;}
-.ss5-sky{position: absolute;width: 400%;height: 100%;top: 0;left: 0;background: url(../images/gobi-webp/ss5-sky.webp) center center no-repeat;background-size: cover;z-index: 1;will-change: transform;}
+.ss5-sky{position: absolute;width: 400%;height: 100%;top: 0;left: 0;background: url(../images/gobi-webp/ss5-sky.webp) center center no-repeat;background-size: cover;z-index: 1;}
 
 .ss5-info-text h5{font-size: 18px;}
 
@@ -541,7 +541,7 @@ main{background: #EEE;}
 .ss5-txt-3-bottom{position: absolute;width: 17.2%;   left: 30.6%; bottom: calc(8vh - 60px);z-index: 13;text-align: center;opacity: 0;transition: opacity 0.5s ease;}
 
 .ss5-txt-4-top{position: absolute; width: 57.7%;   left: 52.2%; bottom:calc(75% + 8vh);z-index: 13;text-align: center;opacity: 0;transition: opacity 0.5s ease;}
-.ss5-txt-4-bottom{position: absolute; width: 24%;  left: 14%;  bottom: 47%;z-index: 13;text-align: center;border-bottom:2px solid #000;opacity: 0;transition: opacity 0.5s ease;}
+.ss5-txt-4-bottom{position: absolute; width: 24%;  left: 14%;  bottom: 65%;z-index: 13;text-align: center;border-bottom:2px solid #000;opacity: 0;transition: opacity 0.5s ease;}
 .ss5-txt-4-bottom::before{content: "　";height: 35px;background-color: #000;width: 2px;position: absolute;left: 0%;bottom: -35px;}
 .ss5-txt-4-bottom::after{content: "　";height: 35px;background-color: #000;width: 2px;position: absolute;right: 0%;bottom: -35px;}
 
@@ -644,7 +644,7 @@ main{background: #EEE;}
 /* Half section block */
 .half-section-block {
   width: 100%;
-  height: 60vh;
+  height: 58vh;
   display: flex;
   overflow: hidden;
   position: relative;
