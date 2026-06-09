@@ -112,7 +112,7 @@ function initMainCode() {
         triggerElement: '#section-landing',
         triggerHook: 0,
         duration: "100%",
-        offset:1200
+        offset: isMobile ? 700 : 1200
     })
     .setTween(landingTruckTimeline)
     .addTo(controller);
@@ -253,13 +253,15 @@ function initMainCode() {
     
     // Parallax effect for section 3 backgrounds
     // Pin section 3 landing
-    new ScrollMagic.Scene({
-        triggerElement: '#section-3 .section-landing',
-        triggerHook: 0,
-        duration: 800
-    })
-    .setPin('#section-3 .section-landing')
-    .addTo(controller);
+    if (!isMobile) {
+        new ScrollMagic.Scene({
+            triggerElement: '#section-3 .section-landing',
+            triggerHook: 0,
+            duration: 800
+        })
+        .setPin('#section-3 .section-landing')
+        .addTo(controller);
+    }
     
     var ss3Bg1Timeline = gsap.timeline();
     ss3Bg1Timeline.to('.ss3-bg-1', {
@@ -370,7 +372,7 @@ function initMainCode() {
         // Mobile: skip overlays and scale, just pan the image from center to right
         ss3Graph1Timeline.fromTo('.ss3-graph1-img-wrap',
             { x: 0 },
-            { x: '-300px', ease: Linear.easeNone }
+            { x: '-50%', ease: Linear.easeNone }
         );
     } else {
         // Step 1: Show overlay 2 and 3 together
@@ -485,13 +487,15 @@ function initMainCode() {
     .addTo(controller);
     
     // Pin section 4 landing
-    new ScrollMagic.Scene({
-        triggerElement: '#section-4 .section-landing',
-        triggerHook: 0,
-        duration: 800
-    })
-    .setPin('#section-4 .section-landing')
-    .addTo(controller);
+    if (!isMobile) {
+        new ScrollMagic.Scene({
+            triggerElement: '#section-4 .section-landing',
+            triggerHook: 0,
+            duration: 800
+        })
+        .setPin('#section-4 .section-landing')
+        .addTo(controller);
+    }
     
     // Parallax effect for section 4 backgrounds
     var ss4Bg1Timeline = gsap.timeline();
@@ -534,13 +538,15 @@ function initMainCode() {
     .addTo(controller);
     
     // Pin section 5 landing
-    new ScrollMagic.Scene({
-        triggerElement: '#section-5 .section-landing',
-        triggerHook: 0,
-        duration: 800
-    })
-    .setPin('#section-5 .section-landing')
-    .addTo(controller);
+    if (!isMobile) {
+        new ScrollMagic.Scene({
+            triggerElement: '#section-5 .section-landing',
+            triggerHook: 0,
+            duration: 800
+        })
+        .setPin('#section-5 .section-landing')
+        .addTo(controller);
+    }
     
     // Parallax effect for section 5 backgrounds
     var ss5Bg1Timeline = gsap.timeline();
