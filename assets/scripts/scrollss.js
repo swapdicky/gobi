@@ -53,7 +53,6 @@ function initMainCode() {
         triggerHook: 0,
         duration: 600
     })
-    .setPin('#section-landing')
     .addTo(controller);   
     // Parallax effect for landing backgrounds - combined for better performance
     var landingParallaxTimeline = gsap.timeline();
@@ -999,18 +998,26 @@ function initMainCode() {
     
     // Mobile: Translate ss5-info-graph-1-inner to right edge during pin
     if (isMobile) {
-        // Train follows the pan on mobile
+        // Step 1: Train moves to -50%
         ss5Timeline.to('.ss5-block-train', {
-            x: '-15%',
+            x: '-55%',
             duration: 1,
             ease: Linear.easeNone
         }, 0);
         
+        // Step 2: ss5-info-graph-1-inner starts moving (after step 1 completes)
         ss5Timeline.to('.ss5-info-graph-1-inner', {
-            x: '-100%',
-            duration: 1,
+            x: '-130%',
+            duration: 2,
             ease: Linear.easeNone
-        }, .5);
+        }, 1);
+        
+        // Step 3: Train continues to -150% (after step 2 completes)
+        ss5Timeline.to('.ss5-block-train', {
+            x: '-50%',
+            duration: 1.5,
+            ease: Linear.easeNone
+        }, 1);
     }
     
     // Step 1: Scale ss5-block-1 from 2 to 1
