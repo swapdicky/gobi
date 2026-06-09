@@ -150,7 +150,7 @@ main{background: #EEE;}
 .ss3-info-graph-0{width: 100%;height: 100vh;display: flex;align-items: center;justify-content: center;position: relative;}
 .ss3-bg-overlay{position: absolute;width: 100%;height: 120vh;top: -10vh;left: 0;background: url(../images/gobi-webp/sandbg.webp) center center no-repeat;background-size: cover;z-index: 0;mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);}
 .ss3-info-graph-1{width: 100%;height: 100vh;position: relative;contain: layout style;}
-.ss3-graph1-img-wrap{width: 100%;height: 100%;position: absolute;left: 46%;top: 50%;transform: translate(-50%,-50%) translateZ(0);transform-origin: right bottom;backface-visibility: hidden;}
+.ss3-graph1-img-wrap{width: 100%;height: 100%;position: absolute;left: 50%;top: 40%;transform: translate(-50%,-50%) translateZ(0);transform-origin: center center;backface-visibility: hidden;}
 .ss3-graph1-img{width:1440px;position: absolute;left: 0;top: 0;backface-visibility: hidden;image-rendering: -webkit-optimize-contrast;}
 .ss3-graph1-overlay{opacity: 0;}
 

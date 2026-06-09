@@ -30,7 +30,7 @@
   .margin-160-bottom {  margin-bottom: 60px !important;}
 
   /* landing */
-  #section-landing{padding-top: 110px;min-height: 960px;}
+  #section-landing{padding-top: 110px;min-height: 1040px;}
   .inner-inlineblock h1{padding: 20px 30px;margin-bottom: 0 !important;}
   .landing-intro{padding: 0;margin-top: 20px;}
   .zoom-out-center{height: 320px;}
@@ -102,7 +102,42 @@
   .ss3-msg-2{left: calc(51% - 160px);}
   .ss3-msg-3{right: calc(8% - 40px);}
   .ss3-ball-wrap-3{right: 8%;}
+
+  .ss3-ball-line{width: 2px;top: 105px;
+  right: 38px;}
+  .ss3-ball-img-object{bottom: 42px;
+  right: 9px;}
   
+@keyframes objectMoveSequence {
+    0% {
+        bottom: 53px;
+        transform: translateX(0);
+    }
+    16.67% {
+        bottom: 26px;
+        transform: translateX(0);
+    }
+    33.33% {
+        bottom: 26px;
+        transform: translateX(0);
+    }
+    50% {
+        bottom: 26px;
+        transform: translateX(-20px);
+    }
+    66.67% {
+        bottom: 26px;
+        transform: translateX(0);
+    }
+    83.33% {
+        bottom: 53px;
+        transform: translateX(0);
+    }
+    100% {
+        bottom: 53px;
+        transform: translateX(0);
+    }
+}
   /* ss4 */
   .ss4-info-graph-1{transform: scale(0.4)}
   .ss4-train-wrap h5 {  left: calc(50% - 240px);  bottom: -160px;  transform: scale(2);}
@@ -210,7 +245,7 @@ bottom: -430px;
 }
 
 @media only screen and (min-width: 1681px) {
-  .ss3-graph1-img{width: 1440px; left: 46%; transform-origin: right bottom;}
+  .ss3-graph1-img{width: 1440px; left: 20%; transform-origin: right bottom;}
   .ss3-graph2-img{width: 1780px; left: 50%;}
   .ss3-info-graph-bg{width: 1280px;}
   .ss3-info-graph-loop{width: 1280px;}

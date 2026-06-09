@@ -111,7 +111,7 @@ function initMainCode() {
         triggerElement: '#section-landing',
         triggerHook: 0,
         duration: "100%",
-        offset: isMobile ? 700 : 1200
+        offset: isMobile ? 200 : 400
     })
     .setTween(landingTruckTimeline)
     .addTo(controller);
@@ -1007,7 +1007,7 @@ function initMainCode() {
         
         // Step 2: ss5-info-graph-1-inner starts moving (after step 1 completes)
         ss5Timeline.to('.ss5-info-graph-1-inner', {
-            x: '-130%',
+            x: '-128%',
             duration: 2,
             ease: Linear.easeNone
         }, 1);
