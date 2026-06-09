@@ -67,7 +67,9 @@
   .ss2-info-graph-1 .context {padding-top: 0;}
   .ss2-info-graph-1 .inner-graph-wild{width: 160vw!important;margin-left: -50vw;}
   .ss2-zoom{position: absolute;right: 60px;    top: 0;width: 25vw;z-index: 9;}
-  .ss2-scroll-hints.active{opacity: 0;}
+  .ss2-scroll-hints{opacity: 0 !important;width: calc(100% - 30px);}
+
+  .ss2-info-graph-1 .ss2-zoom{right: 40px;}
   
   .ss2-info-ball{width: 28px;height: 28px;}
 
@@ -134,6 +136,7 @@
   .ss4-info-txt-1{left: calc(50% - 100vw + 15px);width: 50vw;bottom: -940px;}
   .ss4-info-txt-2{left: calc(50% + 50px);;width: calc(50vw - 15px);bottom: -1120px;}
 
+  .ss5-img3 .ss2-zoom{right: 15px}
 
   #section-4 .inner-qoute-2{top:-120px;margin-top:0;}
   #section-4 .inner-qoute-2 h6{bottom:50px}
