@@ -125,7 +125,7 @@
   .ss5-txt-3-top {  width: 27.2%;  left: 99.6%;}
   .ss5-txt-3-bottom {  left: 103.6%;}
   .ss5-txt-4-bottom{width: 38%;    left: 75%;}
-  .ss5-txt-4-top{left: 129.2%;}
+  .ss5-txt-4-top{left: 129.2%;width: 59%;}
 
   /* ss4 */
   .ss4-cc-train{top:1000px }
@@ -178,7 +178,7 @@ bottom: -430px;
   .ss5-img3 .inner-graph-wild{width: 150vw;max-width: none;}
   .ss5-map-object img{width: 150px;margin-left: 15px;margin-bottom: 10px;}
   .ss5-track-img,.ss5-track{width: 200%;}
-  
+  .ss5-info-text h5{font-size: 16px;}
   .ss5-block-1,.ss5-block-2,.ss5-block-3,.ss5-block-4{transform: scale(1) translateX(0);opacity: 1;}
   .ss5-txt-1-top,.ss5-txt-1-bottom,.ss5-txt-2-top,.ss5-txt-2-bottom,.ss5-txt-3-top,.ss5-txt-3-bottom,.ss5-txt-4-top,.ss5-txt-4-bottom{opacity: 1;}
   .ss5-txt-4-bottom{bottom:85%}
