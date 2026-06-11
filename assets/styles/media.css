@@ -60,7 +60,7 @@
   /* ss1 */
   .ss3-graph1-img-wrap{width: 1020px;position: absolute;left: calc(100% + 90px);top: 10%;transform: translate(-50%,-50%);height: auto;}
   .ss3-graph1-img{width: 100%;position: absolute;left: 0;top: 0;}
-  .ss3-graph2-img{width: 240vw;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+  .ss3-graph2-img{width: 240vw;position: absolute;left: 53%;top: 50%;transform: translate(-50%,-50%);}
   .ss3-graph1-overlay{opacity: 1;}
   .ss2-info-graph-1 {position: relative;height: 100vh;;padding-top: 0;}
   .ss2-info-graph-1 .context {position: absolute;top:35%;transform: translateY(-50%);}
@@ -105,8 +105,8 @@
   .ss3-info-graph-bg{width: 300vw;}
   .ss3-info-graph-loop{height: auto ;width: 70%;left: 15%;;;}
 
-  .ss3-info-graph-loop{top:25%}
-  .ss3-connector{top:calc(25% - 10px)}
+  .ss3-info-graph-loop{top:120px}
+  .ss3-connector{top:calc(120px - 10px)}
 
   .ss3-ball-line{width: 2px;top: 105px;
   right: 38px;}
